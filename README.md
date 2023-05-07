@@ -24,6 +24,7 @@
 
 4.在系统环境变量path中添加python安装路径和脚本路径、添加qt的bin路径、添加cmake的路径
 例如：
+
     cmake：D:\Program Files\CMake\bin
     python：C:\Program Files (x86)\Python37-32
             C:\Program Files (x86)\Python37-32\Scripts
