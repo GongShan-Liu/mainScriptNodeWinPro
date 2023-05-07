@@ -1,3 +1,7 @@
+** 使用CMake、C++编写Qt模仿Maya的脚本窗口和节点窗口 **
+以下是效果展示
+![](https://github.com/GongShan-Liu/blogImages/blob/main/imgs/mainScriptNodeWinPro.gif?raw=true)
+
 1.下载cmake版本3.17，并使用visual studio code部署cmake
 
 
@@ -48,8 +52,6 @@ import sys
 
 # 添加pyside2的路径，路径需要根据实际修改
 
-sys.path.append(r"{project_path}\mainScriptNodeWinPro\pythonLib\site-packages")
-
-from PySide2 import QtWidgets
-
-print(QtWidgets.QApplication.activeWindow())
+`sys.path.append(r"{project_path}\mainScriptNodeWinPro\pythonLib\site-packages")`
+`from PySide2 import QtWidgets`
+`print(QtWidgets.QApplication.activeWindow())`
