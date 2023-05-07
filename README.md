@@ -47,6 +47,7 @@
 import sys
 
 # 添加pyside2的路径，路径需要根据实际修改
+
 sys.path.append(r"{project_path}\mainScriptNodeWinPro\pythonLib\site-packages")
 
 from PySide2 import QtWidgets
