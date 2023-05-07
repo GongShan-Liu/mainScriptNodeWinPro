@@ -6,6 +6,7 @@
 
 出现无法找到python37_d.lib的错误
     去到python的include路径下找到pyconfig.h文件，把
+    
         #                               pragma comment(lib,"python37_d.lib")
 
     修改为
