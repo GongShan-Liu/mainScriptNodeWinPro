@@ -13,7 +13,7 @@
 **注意：python和qt的5.12.6最好都是32位版本**
 
 4.在系统环境变量path中添加python安装路径和脚本路径、添加qt的bin路径、添加cmake的路径
-例如：
+如下：
 ~~~
     cmake：D:\Program Files\CMake\bin
     python：C:\Program Files (x86)\Python37-32
@@ -24,7 +24,7 @@
     新增环境变量：QT_QPA_PLATFORM_PLUGIN_PATH=D:\Qt\Qt5.12.6\5.12.6\msvc2017\plugins\platforms
 ~~~
 
-5.修改CMakeLists.txt文件的qt5路径和python库路径和头文件路径，修改为qt和python的安装路径
+5.根据安装的情况修改CMakeLists.txt文件的qt5路径和python库路径和头文件路径，修改为qt和python的安装路径
 ~~~
     set(QT5_COMPILERS_DIR "C:/Qt/Qt5.12.6/5.12.6/msvc2017")
     set(PYTHON_DIR "C:/Program Files (x86)/Python37-32")
