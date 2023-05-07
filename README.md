@@ -1,31 +1,16 @@
-**使用CMake、C++编写Qt模仿Maya的脚本窗口和节点窗口**
+**使用CMake、C++、Qt编写类似Maya的脚本窗口和节点窗口**
 - 以下是效果展示
 ![](https://github.com/GongShan-Liu/blogImages/blob/main/imgs/mainScriptNodeWinPro.gif?raw=true)
 
 1.下载cmake版本3.17，并使用visual studio code部署cmake
 
-
 2.下载python的3.7本版
     https://www.python.org/downloads/
-
-出现无法找到python37_d.lib的错误
-    去到python的include路径下找到pyconfig.h文件，把
-    ~~~
-    
-        #                               pragma comment(lib,"python37_d.lib")
-
-    修改为
-        #                               pragma comment(lib,"python37.lib")
-
-    保存即可
-    ~~~
-
-
 
 3.下载qt的5.12.6的win 版本
     http://download.qt.io/archive/qt/5.12/5.12.6/
 
-注意：python和qt的5.12.6最好都是32位版本
+**注意：python和qt的5.12.6最好都是32位版本**
 
 4.在系统环境变量path中添加python安装路径和脚本路径、添加qt的bin路径、添加cmake的路径
 例如：
@@ -44,6 +29,15 @@
     set(QT5_COMPILERS_DIR "C:/Qt/Qt5.12.6/5.12.6/msvc2017")
     set(PYTHON_DIR "C:/Program Files (x86)/Python37-32")
 ~~~
+
+**注意：编译过程出现无法找到python37_d.lib的错误，到python的include路径下找到pyconfig.h文件，把**
+~~~
+#                               pragma comment(lib,"python37_d.lib")
+修改为
+#                               pragma comment(lib,"python37.lib")
+保存即可
+~~~
+
 
 6.使用cmake的Release运行项目，这样脚本编辑器中使用pyside2的代码才能读取到qt的DLL
 
